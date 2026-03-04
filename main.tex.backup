@@ -13,7 +13,6 @@
 \usepackage{fontspec} % XeLaTeX/LuaLaTeX for custom fonts
 \usepackage{tikz} % for placing the logo in the corner
 \usepackage{array}
-\usepackage{enumitem}
 
 % === FONT SETUP ===
 \setmainfont{Montserrat} % Change to another system font if desired
@@ -44,11 +43,10 @@
 }
 
 
-\renewcommand{\baselinestretch}{1.02}
+\renewcommand{\baselinestretch}{1.1}
 \setlength{\tabcolsep}{12pt}
 
 \newcommand{\vegan}{\textbf{\scriptsize \color{vegan}{Vegan}}}
-\newcommand{\vegetarisch}{\textbf{\scriptsize \color{vegan}{V}}}
 
 % === DOCUMENT START ===
 \begin{document}
@@ -69,43 +67,38 @@
 
 \section*{Suppen}
 \begin{tabular}{Lrr}
-\textbf{Misosuppe}\textsuperscript{\vegan} & & 4.5 \\
-\textbf{Frittatensuppe}\textsuperscript{{\scriptsize ACGL}} & & 4.9 \\
-\textbf{Kürbiscremesuppe}\textsuperscript{\vegan} & & 5.9
+\textbf{Frittatensuppe}\textsuperscript{{\scriptsize ACGL}} & 4.9 \\
+\textbf{Kürbiscremesuppe}\textsuperscript{\vegan} & 5.9
 \end{tabular}
 
 \section*{Vorspeisen}
 \begin{tabular}{Lrr}
-\textbf{Rindertatar}\textsuperscript{{\scriptsize ABCDGMO}} & & 17.9\vspace{0.2cm}\\
+\textbf{Rindertatar}\textsuperscript{{\scriptsize ABCDGMO}} & 17.9\vspace{0.2cm}\\
 \textbf{Langos mit}\textsuperscript{{\scriptsize AGDNO}}\\
-\hspace{0.4cm}Huhn & & 7.9\\
-\hspace{0.4cm}Ente/Rind & & 9.6\\
-\hspace{0.4cm}Lachs & & 9.9\\
-\hspace{0.4cm}Bergkäse\textsuperscript{\vegetarisch} & & 6.9\vspace{0.2cm}\\
+\hspace{0.4cm}Huhn & 7.9\\
+\hspace{0.4cm}Ente/Rind & 9.6\\
+\hspace{0.4cm}Lachs & 9.9\vspace{0.2cm}\\
 \textbf{Sommerrollen mit}\textsuperscript{{\scriptsize ADEO}}\\
-\hspace{0.4cm}Huhn & & 5.7\\
-\hspace{0.4cm}Ente & & 7.6\\
-\hspace{0.4cm}Lachs & & 7.9\\
-\hspace{0.4cm}Rind & & 5.9\\
-\hspace{0.4cm}Avocado\textsuperscript{{\scriptsize \vegan}} & & 6.9\vspace{0.2cm}\\
-\textbf{Frühlingsrollen}\\
-\hspace{0.4cm}Klassisch\textsuperscript{{\scriptsize AC}} & & 6.3\\
-\hspace{0.4cm}Vegan\textsuperscript{{\scriptsize A}} & & 5.3\vspace{0.2cm}\\
-\textbf{Vietnamesische Tempura}\textsuperscript{{\scriptsize A}}\\
-\hspace{0.4cm}\scriptsize vegan möglich & & 7.9
+\hspace{0.4cm}Huhn & 5.7\\
+\hspace{0.4cm}Ente & 7.6\\
+\hspace{0.4cm}Lachs & 7.9\\
+\hspace{0.4cm}Rind & 5.9\\
+\hspace{0.4cm}Avocado\textsuperscript{{\scriptsize \vegan}} & 6.9\vspace{0.2cm}\\
+\textbf{Frühlingsrollen Klassisch}\textsuperscript{{\scriptsize AC}} & 6.3\\
+\textbf{Frühlingsrollen Vegan}\textsuperscript{{\scriptsize A}} & 5.3
 \end{tabular}
 
 
 \section*{Desserts}
 \begin{tabular}{Lrr}
-\textbf{Kaiserschmarrn}\textsuperscript{{\scriptsize ACG, \vegetarisch}}\\
-\hspace{0.4cm}\scriptsize mit Marillenkompott & & 8.9\\
+\textbf{Kaiserschmarrn}\textsuperscript{{\scriptsize ACG}}\\
+\hspace{0.4cm}\scriptsize mit Marillenkompott & 8.9\\
 \textbf{Pochierte Birne}\textsuperscript{{\scriptsize \vegan, H}}\\
-\hspace{0.4cm}\scriptsize mit karamellisierten Haselnüssen, Kastanienmousse und Vanilletuile & & 9.9\\
+\hspace{0.4cm}\scriptsize mit karamellisierten Haselnüssen, Kastanienmousse und Vanilletuile & 9.9\\
 \textbf{Vietnamesisches Mochi}\textsuperscript{{\scriptsize \vegan, E}}\\
-\hspace{0.4cm}\scriptsize mit Kokossauce und Erdnüssen & & 9.9 \\
+\hspace{0.4cm}\scriptsize mit Kokossauce und Erdnüssen & 9.9 \\
 %\textbf{Baked(2,2,2) (Über Gothic)}\textsuperscript{{\scriptsize E}}\\
-%\scriptsize Academic Success / Song of rest / Curse on your enemies & & 10\textsuperscript{{\scriptsize 9}}.9
+%\scriptsize Academic Success / Song of rest / Curse on your enemies & 10\textsuperscript{{\scriptsize 9}}.9
 \end{tabular}
 
 
@@ -114,43 +107,42 @@
 \section*{Hauptspeisen}
 \begin{tabular}{Lrr}
 \textbf{Schweineschnitzel}\textsuperscript{{\scriptsize ACG}}\\
-\hspace{0.4cm}\scriptsize  mit Kartoffelsalat & & 15.9\\
+\hspace{0.4cm}\scriptsize  mit Kartoffelsalat & 15.9\\
 \textbf{Kalbsschnitzel}\textsuperscript{{\scriptsize ACG}}\\
-\hspace{0.4cm}\scriptsize  mit Kartoffelsalat & & 25.9\\
+\hspace{0.4cm}\scriptsize  mit Kartoffelsalat & 25.9\\
 \textbf{Hühnerschnitzel}\textsuperscript{{\scriptsize ACG}}\\
-\hspace{0.4cm}\scriptsize  mit Caesar-Salat & & 19.9\\
-\textbf{Gà nướng đậu phộng}\textsuperscript{{\scriptsize AEFGM}}\\
-\hspace{0.4cm}\scriptsize Gegrilltes Huhn mit Erdnusssauce, Kokos-Klebreis und Blattsalat & & 23.9\\
+\hspace{0.4cm}\scriptsize  mit Caesar-Salat & 19.9\\
+\textbf{Gegrilltes Huhn}\textsuperscript{{\scriptsize AEFGM}}\\
+\hspace{0.4cm}\scriptsize mit Erdnusssauce, Kokos-Klebreis und Blattsalat \emph{(vietnamesische Spezialität)} & 23.9\\
 \textbf{Teriyaki-Lachs}\textsuperscript{{\scriptsize ACEFGM}}\\
-\hspace{0.4cm}\scriptsize Filet mit Reis und Caesar-Salat & & 19.9\\
+\hspace{0.4cm}\scriptsize Filet mit Reis und Caesar-Salat & 19.9\\
 \textbf{Curry mit}\\
-\hspace{0.4cm}Huhn \textsuperscript{{\scriptsize AF}} & & 15.9\\
-\hspace{0.4cm}Ente \textsuperscript{{\scriptsize AF}} & & 19.9\\
-\hspace{0.4cm}Rind \textsuperscript{{\scriptsize AF}} & & 17.9\\
-\hspace{0.4cm}Paneer\textsuperscript{\vegetarisch} & & 15.9\\
-%\hspace{0.4cm}$\mathfrak{Katsu}$ (Chicken Schnitzel) \textsuperscript{{\scriptsize AC}} & & 19.9\vspace{0.2cm}\\
+\hspace{0.4cm}Huhn \textsuperscript{{\scriptsize AF}} & 15.9\\
+\hspace{0.4cm}Ente \textsuperscript{{\scriptsize AF}} / Katsu\textsuperscript{{\scriptsize AC}} & 19.9\\
+\hspace{0.4cm}Rind \textsuperscript{{\scriptsize AF}} & 17.9\\
+%\hspace{0.4cm}$\mathfrak{Katsu}$ (Chicken Schnitzel) \textsuperscript{{\scriptsize AC}} & 19.9\vspace{0.2cm}\\
 \textbf{Pad Thai mit Salat}\textsuperscript{{\scriptsize AE}}\\
-\hspace{0.4cm}Huhn & & 15.9\\
-\hspace{0.4cm}Ente & & 19.9\\
-\hspace{0.4cm}Rind & & 17.9\\
+\hspace{0.4cm}Huhn & 15.9\\
+\hspace{0.4cm}Ente / Katsu & 19.9\\
+\hspace{0.4cm}Rind & 17.9\\
 \textbf{Pho-Suppe mit Nudeln}\textsuperscript{{\scriptsize A}}\\
-\hspace{0.4cm}Huhn & & 17.9\\
-\hspace{0.4cm}Rind & & 19.9\\
-\hspace{0.4cm}Rinderrippen & & 25.9\\
-\hspace{0.4cm}Ente & & 21.9\\
-\textbf{Ramen}\textsuperscript{{\scriptsize ACF}}\\
-\hspace{0.4cm}Huhn & & 17.9\\
-\hspace{0.4cm}Rind & & 19.9\\
-\hspace{0.4cm}Rinderrippen & & 25.9\\
-\hspace{0.4cm}Ente & & 21.9\\
+\hspace{0.4cm}Huhn & 17.9\\
+\hspace{0.4cm}Rind & 19.9\\
+\hspace{0.4cm}Rinderrippen & 25.9\\
+\hspace{0.4cm}Ente & 21.9\\
+\textbf{Ramen mit Nudeln}\textsuperscript{{\scriptsize ACF}}\\
+\hspace{0.4cm}Huhn & 17.9\\
+\hspace{0.4cm}Rind & 19.9\\
+\hspace{0.4cm}Rinderrippen & 25.9\\
+\hspace{0.4cm}Ente & 21.9\\
 \textbf{Sushi}\\
-\hspace{0.4cm}Lachs\textsuperscript{{\scriptsize ACDF}} & & 17.9\\
-\hspace{0.4cm}Lachs-Avocado\textsuperscript{{\scriptsize CDF}} & & 19.9\\
-\hspace{0.4cm}Avocado\textsuperscript{{\scriptsize \vegan, AFN }} & & 15.9\\
-\textbf{Cà tím kho}\textsuperscript{\vegan}\\
-\hspace{0.4cm}\scriptsize Vietnamesisches Gericht aus karamellisierten Melanzani & & 16.9\\
-\textbf{Schafkäse-Teigtaschen}\textsuperscript{{\scriptsize \vegetarisch}}\\
-\hspace{0.4cm}\scriptsize mit Parmesansauce und gemischtem grünem Salat & & 19.9
+\hspace{0.4cm}Lachs\textsuperscript{{\scriptsize ACDF}} & 17.9\\
+\hspace{0.4cm}Lachs-Avocado\textsuperscript{{\scriptsize CDF}} & 19.9\\
+\hspace{0.4cm}Avocado\textsuperscript{{\scriptsize \vegan, AFN }} & 15.9\\
+\textbf{Dimsum}\textsuperscript{{\vegan }}\\
+\hspace{0.4cm}\scriptsize mit Kürbis und Kokos& 18.9\\
+\textbf{Ravioli}\textsuperscript{{\scriptsize AG}}\\
+\hspace{0.4cm}\scriptsize mit Parmesansauce und gemischtem grünem Salat ({\color{vegan}{\bf Vegetarisch}}) & 18.9
 \end{tabular}
 
 \end{multicols}
@@ -214,66 +206,63 @@ Vöslauer Prickelnd & 3.2 & 6.9
 
 \section*{Softdrinks}
 \begin{tabular}{Lrr}
-Coca-Cola 0,33 l & & 3.8\\
-Coca-Cola Zero 0,33 l & & 3.8\\
-Soda Zitrone / Himbeere / Holunder 0,5 l & & 4.9\\
-Soda 0,5 l & & 2.9
+Coca-Cola 0,33 l & 3.8\\
+Coca-Cola Zero 0,33 l & 3.8\vspace{0.2cm}\\
+\textbf{Soda}\\
+Zitrone / Himbeere / Holunder 0.5 l & 4.3
 \end{tabular}
 
 \section*{Heißgetränke}
 \begin{tabular}{Lrr}
 \textbf{Wiener Kaffee}\\
-Espresso klein & & 3.3\\
-Espresso groß & & 4.6\\
-Cappuccino & & 4.9\vspace{0.2cm}\\
+Espresso klein & 3.3\\
+Espresso groß & 4.6\\
+Cappuccino & 4.9\vspace{0.2cm}\\
 \textbf{Tee}\\
-Kräutertee & & 3.9\\
-Früchtetee & & 3.9\\
-Ingwertee & & 3.9
+Kräutertee & 3.9\\
+Früchtetee & 3.9\\
+Ingwertee & 3.9
 \end{tabular}
 
 \section*{Bier}
 \begin{tabular}{Lrr}
 \textbf{Vom Fass}\\
-Stiegl 0,3 l & & 3.9\\
-Stiegl 0,5 l & & 5.1\vspace{0.2cm}\\
+Stiegl 0,5 l & 5.1\vspace{0.2cm}\\
 \textbf{Flasche}\\
-Ottakringer Helles 0,33 l & & 4.5\\
-Ottakringer Zwickl Hell (Bio) 0,5 l & & 5.4\\
-Wieselburger Gold 0,5 l & & 5.2\\
-Kirin Lager 0,33 l & & 5.1\vspace{0.2cm}\\
+Ottakringer Helles 0,33 l & 4.5\\
+Ottakringer Zwickl Hell (Bio) 0,5 l & 5.4\\
+Wieselburger Gold 0,5 l & 5.2\\
+Kirin Lager 0,33 l & 5.1\vspace{0.2cm}\\
 \textbf{Alkoholfrei}\\
-Trumer Freispiel 0,33 l & & 4.2\\
-Ottakringer Null Komma Josef 0,33 l & & 4.2
+Trumer Freispiel 0,33 l & 4.2\\
+Ottakringer Null Komma Josef 0,33 l & 4.2
 \end{tabular}
 
 \section*{Spritz \& Aperitif}
 \begin{tabular}{Lrr}
-Aperol Spritz & & 7.1\\
-Hugo & & 6.6\\
-Prosecco (Zonin Millesimato Brut) 0,1 l & & 5.5
+Aperol Spritz & 7.1\\
+Hugo & 6.6\\
+Prosecco (Zonin Millesimato Brut) 0,1 l & 5.5
 \end{tabular}
 
 \section*{Weine}
 \begin{tabular}{Lrr}
 & 0,125 l & 0,75 l\\
--- \textbf{Gelber Muskateller} \emph{Domäne Wachau 2024} & 4.9 & 29.9\\
--- \textbf{Roter Veltliner} \emph{Wagram DAC 2024} & 5.0 & 30.5\\
--- \textbf{Roter Veltliner Ried Altweingarten} \emph{Schuster 2024} & 5.2 & 31.8\\
--- \textbf{Riesling Federspiel Loibenberg} \emph{Domäne Wachau 2024} & 5.1 & 31.5\\
--- \textbf{Rosé Cistercien} \emph{Schloss Gobelsburg 2024} & 4.8 & 29.2\\
--- \textbf{Blaufränkisch Oggau Johanneshöhe (Bio)} \emph{Prieler 2022} & 5.2 & 31.8\\
--- \textbf{Merlot} \emph{Malteser Ritterorden 2021} & 5.0 & 30.5\\
--- \textbf{Pinot Noir vom Schloss (Bio)} \emph{Graf Hardegg 2023} & 5.3 & 32.2
+Gelber Muskateller \emph{Domäne Wachau 2024} & 4.9 & 29.9\\
+Riesling Federspiel Loibenberg \emph{Domäne Wachau 2024} & 5.1 & 31.5\\
+Rosé Cistercien \emph{Schloss Gobelsburg 2024} & 4.8 & 29.2\\
+Blaufränkisch Oggau Johanneshöhe (Bio) \emph{Prieler 2022} & 5.2 & 31.8\\
+Merlot \emph{Malteser Ritterorden 2021} & 5.0 & 30.5\\
+Pinot Noir vom Schloss (Bio) \emph{Graf Hardegg 2023} & 5.3 & 32.2
 \end{tabular}
 
 \end{multicols}
 
-\vspace{1em}
+\vfill
 \begin{center}
     \rule{0.5\linewidth}{0.4pt}\\
     {\small \textit{Alle Preise inklusive MwSt.}}\\
-    {\small Liechtensteinstraße 23, 1090 Wien \quad | \quad +43 660 5553879 \quad | \quad papatanrestaurant.at}
+    {\small \textbf{Adresse:} Treustraße 27, 1200 Wien \quad | \quad \textbf{Tel:} +43 XXXXXX }
 \end{center}
 
 
