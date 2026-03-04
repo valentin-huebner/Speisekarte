@@ -44,28 +44,27 @@
 }
 
 
-\renewcommand{\baselinestretch}{1.02}
+\renewcommand{\baselinestretch}{0.98}
 \setlength{\tabcolsep}{12pt}
 
 \newcommand{\vegan}{\textbf{\scriptsize \color{vegan}{Vegan}}}
-\newcommand{\vegetarisch}{\textbf{\scriptsize \color{vegan}{V}}}
+\newcommand{\vegetarisch}{\textbf{\scriptsize \color{vegan}{Veg}}}
 
 % === DOCUMENT START ===
 \begin{document}
 
-% Logo in top-right corner
-\begin{tikzpicture}[remember picture,overlay]
-\node[anchor=north east,yshift=-1cm,xshift=-1cm] at (current page.north east) 
-{\includegraphics[width=3.9cm]{papa_tan_bw.jpeg}};
-\end{tikzpicture}
-
-\begin{center}
-    {\Huge\bfseries\color{accent} Papa Tan}\\[0.5em]
-    \rule{0.5\linewidth}{0.4pt}\\[1em]
-\end{center}
-
 \setlength{\columnsep}{0.8cm}
 \begin{multicols}{2}
+
+\noindent
+{\Huge\bfseries\color{accent} Papa Tan}\\[0.5em]
+\noindent\rule{\linewidth}{0.4pt}\\[0.5em]
+
+% Logo as overlay in first column
+\begin{tikzpicture}[remember picture,overlay]
+\node[anchor=north,xshift=8.5cm,yshift=-1cm] at (current page.north west) 
+{\includegraphics[width=3.5cm]{papa_tan_bw.jpeg}};
+\end{tikzpicture}
 
 \section*{Suppen}
 \begin{tabular}{Lrr}
@@ -76,23 +75,23 @@
 
 \section*{Vorspeisen}
 \begin{tabular}{Lrr}
-\textbf{Rindertatar}\textsuperscript{{\scriptsize ABCDGMO}} & & 17.9\vspace{0.2cm}\\
+\textbf{Beef Tatar}\textsuperscript{{\scriptsize ABCDGMO}} & & 17.9\vspace{0.1cm}\\
 \textbf{Langos mit}\textsuperscript{{\scriptsize AGDNO}}\\
 \hspace{0.4cm}Huhn & & 7.9\\
 \hspace{0.4cm}Ente/Rind & & 9.6\\
 \hspace{0.4cm}Lachs & & 9.9\\
-\hspace{0.4cm}Bergkäse\textsuperscript{\vegetarisch} & & 6.9\vspace{0.2cm}\\
+\hspace{0.4cm}Bergkäse\textsuperscript{\vegetarisch} & & 6.9\vspace{0.1cm}\\
 \textbf{Sommerrollen mit}\textsuperscript{{\scriptsize ADEO}}\\
 \hspace{0.4cm}Huhn & & 5.7\\
 \hspace{0.4cm}Ente & & 7.6\\
 \hspace{0.4cm}Lachs & & 7.9\\
 \hspace{0.4cm}Rind & & 5.9\\
-\hspace{0.4cm}Avocado\textsuperscript{{\scriptsize \vegan}} & & 6.9\vspace{0.2cm}\\
+\hspace{0.4cm}Avocado\textsuperscript{{\scriptsize \vegan}} & & 6.9\vspace{0.1cm}\\
 \textbf{Frühlingsrollen}\\
 \hspace{0.4cm}Klassisch\textsuperscript{{\scriptsize AC}} & & 6.3\\
-\hspace{0.4cm}Vegan\textsuperscript{{\scriptsize A}} & & 5.3\vspace{0.2cm}\\
+\hspace{0.4cm}{\color{vegan}{\textbf{Vegan}}}\textsuperscript{{\scriptsize A}} & & 5.3\vspace{0.1cm}\\
 \textbf{Vietnamesische Tempura}\textsuperscript{{\scriptsize A}}\\
-\hspace{0.4cm}\scriptsize vegan möglich & & 7.9
+\hspace{0.4cm}\scriptsize {\color{vegan}{\textbf{vegan}}} möglich & & 7.9
 \end{tabular}
 
 
@@ -121,19 +120,24 @@
 \hspace{0.4cm}\scriptsize  mit Caesar-Salat & & 19.9\\
 \textbf{Gà nướng đậu phộng}\textsuperscript{{\scriptsize AEFGM}}\\
 \hspace{0.4cm}\scriptsize Gegrilltes Huhn mit Erdnusssauce, Kokos-Klebreis und Blattsalat & & 23.9\\
-\textbf{Teriyaki-Lachs}\textsuperscript{{\scriptsize ACEFGM}}\\
-\hspace{0.4cm}\scriptsize Filet mit Reis und Caesar-Salat & & 19.9\\
-\textbf{Curry mit}\\
+\textbf{Teriyaki}\textsuperscript{{\scriptsize ACEFGM}}\\
+\hspace{0.4cm}\scriptsize mit Reis und Caesar-Salat\\
+\hspace{0.4cm}Lachs & & 19.9\\
+\hspace{0.4cm}Ente-Mango & & 19.9\\
+\textbf{Grünes Thai-Curry}\\
 \hspace{0.4cm}Huhn \textsuperscript{{\scriptsize AF}} & & 15.9\\
 \hspace{0.4cm}Ente \textsuperscript{{\scriptsize AF}} & & 19.9\\
 \hspace{0.4cm}Rind \textsuperscript{{\scriptsize AF}} & & 17.9\\
-\hspace{0.4cm}Paneer\textsuperscript{\vegetarisch} & & 15.9\\
+\hspace{0.4cm}Gebratener Tofu\textsuperscript{\vegan} & & 15.9\\
+\hspace{0.4cm}Gemüse\textsuperscript{\vegan} & & 14.9\\
 %\hspace{0.4cm}$\mathfrak{Katsu}$ (Chicken Schnitzel) \textsuperscript{{\scriptsize AC}} & & 19.9\vspace{0.2cm}\\
 \textbf{Pad Thai mit Salat}\textsuperscript{{\scriptsize AE}}\\
 \hspace{0.4cm}Huhn & & 15.9\\
 \hspace{0.4cm}Ente & & 19.9\\
 \hspace{0.4cm}Rind & & 17.9\\
-\textbf{Pho-Suppe mit Nudeln}\textsuperscript{{\scriptsize A}}\\
+\hspace{0.4cm}Gebratener Tofu\textsuperscript{\vegan} & & 15.9\\
+\hspace{0.4cm}Seitan\textsuperscript{\vegan} & & 15.9\\
+\textbf{Phở mit Nudeln}\textsuperscript{{\scriptsize A}}\\
 \hspace{0.4cm}Huhn & & 17.9\\
 \hspace{0.4cm}Rind & & 19.9\\
 \hspace{0.4cm}Rinderrippen & & 25.9\\
@@ -150,7 +154,7 @@
 \textbf{Cà tím kho}\textsuperscript{\vegan}\\
 \hspace{0.4cm}\scriptsize Vietnamesisches Gericht aus karamellisierten Melanzani & & 16.9\\
 \textbf{Schafkäse-Teigtaschen}\textsuperscript{{\scriptsize \vegetarisch}}\\
-\hspace{0.4cm}\scriptsize mit Parmesansauce und gemischtem grünem Salat & & 19.9
+\hspace{0.4cm}\scriptsize mit Parmesansauce und grünem Salat & & 19.9
 \end{tabular}
 
 \end{multicols}
@@ -175,7 +179,7 @@
 \textbf{L}(Sellerie) 
 \textbf{M}(Senf)
 \textbf{N}(Sesam) 
-\textbf{O}(Sulfite)}
+\textbf{O}(Sulfite) \quad | \quad {\color{vegan}{\textbf{Vegan}}} = Vegan \quad {\color{vegan}{\textbf{Veg}}} = Vegetarisch}
 \end{tcolorbox}
 
 
@@ -208,68 +212,68 @@
 \section*{Wasser}
 \begin{tabular}{Lrr}
 & 0,33 l & 0,75 l\\
-Vöslauer Still & 3.2 & 5.9\\
-Vöslauer Prickelnd & 3.2 & 6.9
+\hspace{0.4cm}Vöslauer Still & 3.2 & 5.9\\
+\hspace{0.4cm}Vöslauer Prickelnd & 3.2 & 6.9
 \end{tabular}
 
 \section*{Softdrinks}
 \begin{tabular}{Lrr}
-Coca-Cola 0,33 l & & 3.8\\
-Coca-Cola Zero 0,33 l & & 3.8\\
-Soda Zitrone / Himbeere / Holunder 0,5 l & & 4.9\\
-Soda 0,5 l & & 2.9
+\hspace{0.4cm}Coca-Cola 0,33 l & & 3.8\\
+\hspace{0.4cm}Coca-Cola Zero 0,33 l & & 3.8\\
+\hspace{0.4cm}Soda Zitrone / Himbeere / Holunder 0,5 l & & 4.9\\
+\hspace{0.4cm}Soda 0,5 l & & 2.9
 \end{tabular}
 
 \section*{Heißgetränke}
 \begin{tabular}{Lrr}
 \textbf{Wiener Kaffee}\\
-Espresso klein & & 3.3\\
-Espresso groß & & 4.6\\
-Cappuccino & & 4.9\vspace{0.2cm}\\
+\hspace{0.4cm}Espresso klein & & 3.3\\
+\hspace{0.4cm}Espresso groß & & 4.6\\
+\hspace{0.4cm}Cappuccino & & 4.9\vspace{0.1cm}\\
 \textbf{Tee}\\
-Kräutertee & & 3.9\\
-Früchtetee & & 3.9\\
-Ingwertee & & 3.9
+\hspace{0.4cm}Kräutertee & & 3.9\\
+\hspace{0.4cm}Früchtetee & & 3.9\\
+\hspace{0.4cm}Ingwertee & & 3.9
 \end{tabular}
 
 \section*{Bier}
 \begin{tabular}{Lrr}
 \textbf{Vom Fass}\\
-Stiegl 0,3 l & & 3.9\\
-Stiegl 0,5 l & & 5.1\vspace{0.2cm}\\
+\hspace{0.4cm}Stiegl 0,3 l & & 3.9\\
+\hspace{0.4cm}Stiegl 0,5 l & & 5.1\vspace{0.1cm}\\
 \textbf{Flasche}\\
-Ottakringer Helles 0,33 l & & 4.5\\
-Ottakringer Zwickl Hell (Bio) 0,5 l & & 5.4\\
-Wieselburger Gold 0,5 l & & 5.2\\
-Kirin Lager 0,33 l & & 5.1\vspace{0.2cm}\\
+\hspace{0.4cm}Ottakringer Helles 0,33 l & & 4.5\\
+\hspace{0.4cm}Ottakringer Zwickl Hell (Bio) 0,5 l & & 5.4\\
+\hspace{0.4cm}Wieselburger Gold 0,5 l & & 5.2\\
+\hspace{0.4cm}Kirin Lager 0,33 l & & 5.1\vspace{0.1cm}\\
 \textbf{Alkoholfrei}\\
-Trumer Freispiel 0,33 l & & 4.2\\
-Ottakringer Null Komma Josef 0,33 l & & 4.2
+\hspace{0.4cm}Trumer Freispiel 0,33 l & & 4.2\\
+\hspace{0.4cm}Ottakringer Null Komma Josef 0,33 l & & 4.2
 \end{tabular}
 
 \section*{Spritz \& Aperitif}
 \begin{tabular}{Lrr}
-Aperol Spritz & & 7.1\\
-Hugo & & 6.6\\
-Prosecco (Zonin Millesimato Brut) 0,1 l & & 5.5
+\hspace{0.4cm}Aperol Spritz & & 7.1\\
+\hspace{0.4cm}Hugo & & 6.6\\
+\hspace{0.4cm}Prosecco (Zonin Millesimato Brut) 0,1 l & & 5.5
 \end{tabular}
 
 \section*{Weine}
 \begin{tabular}{Lrr}
 & 0,125 l & 0,75 l\\
--- \textbf{Gelber Muskateller} \emph{Domäne Wachau 2024} & 4.9 & 29.9\\
--- \textbf{Roter Veltliner} \emph{Wagram DAC 2024} & 5.0 & 30.5\\
--- \textbf{Roter Veltliner Ried Altweingarten} \emph{Schuster 2024} & 5.2 & 31.8\\
--- \textbf{Riesling Federspiel Loibenberg} \emph{Domäne Wachau 2024} & 5.1 & 31.5\\
--- \textbf{Rosé Cistercien} \emph{Schloss Gobelsburg 2024} & 4.8 & 29.2\\
--- \textbf{Blaufränkisch Oggau Johanneshöhe (Bio)} \emph{Prieler 2022} & 5.2 & 31.8\\
--- \textbf{Merlot} \emph{Malteser Ritterorden 2021} & 5.0 & 30.5\\
+\hspace{0.4cm}-- \textbf{Gelber Muskateller} \emph{Domäne Wachau 2024} & 4.9 & 29.9\\
+\hspace{0.4cm}-- \textbf{Roter Veltliner} \emph{Wagram DAC 2024} & 5.0 & 30.5\\
+\hspace{0.4cm}-- \textbf{Roter Veltliner Ried Altweingarten} \emph{Schuster 2024} & 5.2 & 31.8\\
+\hspace{0.4cm}-- \textbf{Riesling Federspiel Loibenberg} \emph{Domäne Wachau 2024} & 5.1 & 31.5\\
+\hspace{0.4cm}-- \textbf{Rosé Cistercien} \emph{Schloss Gobelsburg 2024} & 4.8 & 29.2\\
+\hspace{0.4cm}-- \textbf{Blaufränkisch Oggau Johanneshöhe (Bio)} \emph{Prieler 2022} & 5.2 & 31.8\\
+\hspace{0.4cm}-- \textbf{Merlot} \emph{Malteser Ritterorden 2021} & 5.0 & 30.5\\
 -- \textbf{Pinot Noir vom Schloss (Bio)} \emph{Graf Hardegg 2023} & 5.3 & 32.2
 \end{tabular}
 
 \end{multicols}
 
-\vspace{1em}
+\vspace{0.3em}
 \begin{center}
     \rule{0.5\linewidth}{0.4pt}\\
     {\small \textit{Alle Preise inklusive MwSt.}}\\
