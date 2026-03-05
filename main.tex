@@ -44,7 +44,7 @@
 }
 
 
-\renewcommand{\baselinestretch}{0.98}
+\renewcommand{\baselinestretch}{1.0}
 \setlength{\tabcolsep}{12pt}
 
 \newcommand{\vegan}{\textbf{\scriptsize \color{vegan}{Vegan}}}
@@ -62,7 +62,7 @@
 
 % Logo as overlay in first column
 \begin{tikzpicture}[remember picture,overlay]
-\node[anchor=north,xshift=8.5cm,yshift=-1cm] at (current page.north west) 
+\node[anchor=north,xshift=8.5cm,yshift=-2cm] at (current page.north west) 
 {\includegraphics[width=3.5cm]{papa_tan_bw.jpeg}};
 \end{tikzpicture}
 
@@ -136,7 +136,6 @@
 \hspace{0.4cm}Ente & & 19.9\\
 \hspace{0.4cm}Rind & & 17.9\\
 \hspace{0.4cm}Gebratener Tofu\textsuperscript{\vegan} & & 15.9\\
-\hspace{0.4cm}Seitan\textsuperscript{\vegan} & & 15.9\\
 \textbf{Phở mit Nudeln}\textsuperscript{{\scriptsize A}}\\
 \hspace{0.4cm}Huhn & & 17.9\\
 \hspace{0.4cm}Rind & & 19.9\\
@@ -224,6 +223,7 @@ Soda Zitrone / Himbeere / Holunder 0,5 l & & 4.9\\
 Soda 0,5 l & & 2.9
 \end{tabular}
 
+\vspace{0.3em}
 \section*{Heißgetränke}
 \begin{tabular}{Lrr}
 \textbf{Wiener Kaffee}\\
@@ -236,6 +236,7 @@ Soda 0,5 l & & 2.9
 \hspace{0.4cm}Ingwertee & & 3.9
 \end{tabular}
 
+\vspace{0.3em}
 \section*{Bier}
 \begin{tabular}{Lrr}
 \textbf{Vom Fass}\\
@@ -251,14 +252,19 @@ Soda 0,5 l & & 2.9
 \hspace{0.4cm}Ottakringer Null Komma Josef 0,33 l & & 4.2
 \end{tabular}
 
-\section*{Spritz \& Aperitif}
+\columnbreak
+
+\mbox{}\\[2cm]
+
+\section*{Aperitif}
 \begin{tabular}{Lrr}
 Aperol Spritz & & 7.1\\
 Hugo & & 6.6\\
 Prosecco (Zonin Millesimato Brut) 0,1 l & & 5.5
 \end{tabular}
 
-\section*{Weine}
+\vspace{0.3em}
+\section*{Wein}
 \begin{tabular}{Lrr}
 & 0,125 l & 0,75 l\\
 -- \textbf{Gelber Muskateller} \emph{Domäne Wachau 2024} & 4.9 & 29.9\\
