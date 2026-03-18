@@ -1,0 +1,508 @@
+% !TeX program = xelatex
+\documentclass[a4paper,12pt]{article}
+\usepackage[margin=1.5cm]{geometry} % smaller margins
+\usepackage{graphicx}
+\usepackage{titlesec}
+\usepackage{xcolor}
+%\usepackage{mathfrak}
+\usepackage{multicol}
+\usepackage{amsfonts}
+\usepackage{eso-pic}
+\usepackage{parskip}
+\usepackage[most]{tcolorbox}
+\usepackage{fontspec} % XeLaTeX/LuaLaTeX for custom fonts
+\usepackage{tikz} % for placing the logo in the corner
+\usepackage{array}
+\usepackage{enumitem}
+
+% === FONT SETUP ===
+\setmainfont{Montserrat} % Change to another system font if desired
+\pagenumbering{gobble}
+% === COLORS ===
+%\definecolor{accent}{HTML}{D2691E} % Warm fusion tone
+\definecolor{accent}{HTML}{8F4611}
+\definecolor{description}{HTML}{555555} % For dish descriptions
+\definecolor{vegan}{HTML}{3e7a05} % For dish descriptions
+
+
+% === SECTION FORMATTING ===
+\titleformat{\section}
+  {\normalfont\Large\bfseries\color{accent}}
+  {}{0pt}{}
+\titlespacing*{\section}{0pt}{1em}{0.5em}
+
+% === HANGING INDENT FOR WRAPPED LINES ===
+\newcolumntype{L}{>{\raggedright\hangindent=0.8cm\arraybackslash}p{5cm}}
+
+\usepackage{transparent}
+\AddToShipoutPictureBG{%
+  \begin{tikzpicture}[remember picture,overlay]
+    \node[opacity=0.07, anchor=center] at (current page.center){%
+      \includegraphics[width=\paperwidth,height=\paperheight,keepaspectratio]{papa_tan_bw.jpeg}%
+    };
+  \end{tikzpicture}%
+}
+
+
+\renewcommand{\baselinestretch}{1.0}
+\setlength{\tabcolsep}{12pt}
+
+\newcommand{\vegan}{\textbf{\scriptsize \color{vegan}{Vegan}}}
+\newcommand{\vegetarisch}{\textbf{\scriptsize \color{vegan}{Veg}}}
+
+% === DOCUMENT START ===
+\begin{document}
+
+\setlength{\columnsep}{0.8cm}
+\begin{multicols}{2}
+
+\noindent
+{\Huge\bfseries\color{accent} Papa Tan}\\[0.5em]
+\noindent\rule{\linewidth}{0.4pt}\\[0.5em]
+
+% Logo as overlay in first column
+\begin{tikzpicture}[remember picture,overlay]
+\node[anchor=north,xshift=8.5cm,yshift=-2cm] at (current page.north west) 
+{\includegraphics[width=3.5cm]{papa_tan_bw.jpeg}};
+\end{tikzpicture}
+
+\section*{Suppen}
+\begin{tabular}{Lrr}
+\textbf{Misosuppe}\textsuperscript{{\scriptsize F, \vegan}} & & 5.9 \\
+\textbf{Frittatensuppe}\textsuperscript{{\scriptsize ACGL}} & & 6.5 \\
+\textbf{Kürbiscremesuppe}\textsuperscript{\vegan} & & 7.9
+\end{tabular}
+
+\section*{Vorspeisen}
+\begin{tabular}{Lrr}
+\textbf{Beef Tatar}\textsuperscript{{\scriptsize ABCDGMO}} & & 23.5\vspace{0.1cm}\\
+\textbf{Langos mit}\textsuperscript{{\scriptsize AGNO}}\\
+\hspace{0.4cm}Huhn & & 10.5\\
+\hspace{0.4cm}Ente/Rind & & 12.5\\
+\hspace{0.4cm}Räucherlachs\textsuperscript{{\scriptsize D}} & & 12.9\\
+\hspace{0.4cm}Bergkäse\textsuperscript{\vegetarisch} & & 8.9\vspace{0.1cm}\\
+\textbf{Sommerrollen mit}\textsuperscript{{\scriptsize AEO}}\\
+\hspace{0.4cm}Huhn & & 7.5\\
+\hspace{0.4cm}Ente & & 9.9\\
+\hspace{0.4cm}Lachs\textsuperscript{{\scriptsize D}} & & 10.5\\
+\hspace{0.4cm}Rind & & 7.9\\
+\hspace{0.4cm}Avocado\textsuperscript{{\scriptsize \vegan}} & & 8.9\vspace{0.1cm}\\
+\textbf{Schafkäse-Teigtaschen}\textsuperscript{{\scriptsize ACG, \vegetarisch}} & & 11.5\vspace{0.1cm}\\
+\textbf{Frühlingsrollen}\\
+\hspace{0.4cm}Klassisch\textsuperscript{{\scriptsize AC}} & & 8.5\\
+\hspace{0.4cm}{\color{vegan}{\textbf{Vegan}}}\textsuperscript{{\scriptsize A}} & & 6.9\vspace{0.1cm}\\
+\textbf{Vietnamesische Tempura}\textsuperscript{{\scriptsize A}}\\
+\hspace{0.4cm}\scriptsize {\color{vegan}{\textbf{vegan}}} möglich & & 10.5
+\end{tabular}
+
+
+\section*{Desserts}
+\begin{tabular}{Lrr}
+\textbf{Kaiserschmarrn}\textsuperscript{{\scriptsize ACG, \vegetarisch}}\\
+\hspace{0.4cm}\scriptsize mit Marillenkompott & & 11.5\\
+\textbf{Pochierte Birne}\textsuperscript{{\scriptsize \vegan, H}}\\
+\hspace{0.4cm}\scriptsize mit karamellisierten Haselnüssen, Kastanienmousse und Vanilletuile & & 12.9\\
+\textbf{Vietnamesisches Mochi}\textsuperscript{{\scriptsize \vegan, E}}\\
+\hspace{0.4cm}\scriptsize mit Kokossauce und Erdnüssen & & 12.9 \\
+%\textbf{Baked(2,2,2) (Über Gothic)}\textsuperscript{{\scriptsize E}}\\
+%\scriptsize Academic Success / Song of rest / Curse on your enemies & & 10\textsuperscript{{\scriptsize 9}}.9
+\end{tabular}
+
+
+
+
+\section*{Hauptspeisen}
+\begin{tabular}{Lrr}
+\textbf{Schweineschnitzel}\textsuperscript{{\scriptsize ACG}}\\
+\hspace{0.4cm}\scriptsize  mit Kartoffelsalat & & 20.9\\
+\textbf{Kalbsschnitzel}\textsuperscript{{\scriptsize ACG}}\\
+\hspace{0.4cm}\scriptsize  mit Kartoffelsalat & & 33.9\\
+\textbf{Hühnerschnitzel}\textsuperscript{{\scriptsize ACG}}\\
+\hspace{0.4cm}\scriptsize  mit Caesar-Salat & & 25.9\\
+\textbf{Gà nướng đậu phộng}\textsuperscript{{\scriptsize AEFGM}}\\
+\hspace{0.4cm}\scriptsize Gegrilltes Huhn mit Erdnusssauce, Kokos-Klebreis und Blattsalat & & 31.0\\
+\textbf{Teriyaki}\textsuperscript{{\scriptsize ACEFGM}}\\
+\hspace{0.4cm}\scriptsize mit Reis und Caesar-Salat\\
+\hspace{0.4cm}Lachs & & 25.9\\
+\hspace{0.4cm}Ente-Mango & & 25.9\\
+\textbf{Grünes Thai-Curry}\\
+\hspace{0.4cm}Huhn \textsuperscript{{\scriptsize AF}} & & 20.9\\
+\hspace{0.4cm}Ente \textsuperscript{{\scriptsize AF}} & & 25.9\\
+\hspace{0.4cm}Rind \textsuperscript{{\scriptsize AF}} & & 23.5\\
+\hspace{0.4cm}Gebr. Tofu\textsuperscript{{\scriptsize F, \vegan}} & & 20.9\\
+\hspace{0.4cm}Gemüse\textsuperscript{\vegan} & & 19.5\\
+%\hspace{0.4cm}$\mathfrak{Katsu}$ (Chicken Schnitzel) \textsuperscript{{\scriptsize AC}} & & 25.9\vspace{0.2cm}\\
+\textbf{Pad Thai mit Salat}\textsuperscript{{\scriptsize AE}}\\
+\hspace{0.4cm}Huhn & & 21.9\\
+\hspace{0.4cm}Ente & & 25.9\\
+\hspace{0.4cm}Rind & & 23.5\\
+\hspace{0.4cm}Gebr. Tofu\textsuperscript{{\scriptsize F, \vegan}} & & 20.9\\
+\textbf{Phở mit Nudeln}\textsuperscript{{\scriptsize A}}\\
+\hspace{0.4cm}Huhn & & 23.5\\
+\hspace{0.4cm}Rind & & 25.9\\
+\hspace{0.4cm}Rinderrippen & & 33.9\\
+\hspace{0.4cm}Ente & & 28.5\\
+\textbf{Ramen}\textsuperscript{{\scriptsize ACF}}\\
+\hspace{0.4cm}Huhn & & 23.5\\
+\hspace{0.4cm}Rind & & 25.9\\
+\hspace{0.4cm}Rinderrippen & & 33.9\\
+\hspace{0.4cm}Ente & & 28.5\\
+\textbf{Sushi}\\
+\hspace{0.4cm}Lachs\textsuperscript{{\scriptsize ACDF}} & & 23.5\\
+\hspace{0.4cm}Lachs-Avocado\textsuperscript{{\scriptsize CDF}} & & 25.9\\
+\hspace{0.4cm}Avocado\textsuperscript{{\scriptsize \vegan, AFN }} & & 20.9\\
+\textbf{Cà tím kho}\textsuperscript{{\scriptsize F, \vegan}}\\
+\hspace{0.4cm}\scriptsize Vietnamesisches Gericht aus karamellisierten Melanzani & & 24.5\\
+\textbf{Schafkäse-Teigtaschen}\textsuperscript{{\scriptsize ACG, \vegetarisch}}\\
+\hspace{0.4cm}\scriptsize mit Parmesansauce und grünem Salat & & 25.9
+\end{tabular}
+
+\end{multicols}
+
+\vfill
+
+\begin{tcolorbox}[
+  width=\textwidth,
+  colback=white,
+  colframe=white,
+  enhanced,
+]
+\centering
+{\scriptsize\color{gray}
+\textbf{A}(Glutenhaltiges Getreide) 
+\textbf{C}(Ei)
+\textbf{D}(Fisch) 
+\textbf{E}(Erdnüsse) 
+\textbf{F}(Soja) 
+\textbf{G}(Milch oder Laktose)
+\textbf{H}(Schalenfrüchte)
+\textbf{L}(Sellerie) 
+\textbf{M}(Senf)
+\textbf{N}(Sesam) 
+\textbf{O}(Sulfite) \quad | \quad {\color{vegan}{\textbf{Vegan}}} = Vegan \quad {\color{vegan}{\textbf{Veg}}} = Vegetarisch}
+\end{tcolorbox}
+
+\newpage
+
+% === DEUTSCH SEITE 2 ===
+
+
+
+% Logo in top-right corner
+\begin{tikzpicture}[remember picture,overlay]
+\node[anchor=north east,yshift=-1cm,xshift=-1cm] at (current page.north east) 
+{\includegraphics[width=3.5cm]{papa_tan_bw.jpeg}};
+\end{tikzpicture}
+
+\begin{center}
+    {\huge\bfseries\color{accent} Papa Tan}\\[0.35em]
+    \vspace{3.6em}
+\end{center}
+
+\small
+\titlespacing*{\section}{0pt}{0.45em}{0.25em}
+\setlength{\columnsep}{0.7cm}
+\begin{multicols}{2}
+
+\section*{Säfte}
+\begin{tabular}{Lrr}
+Coca-Cola 0,33 l & & 5.0\\
+Coca-Cola Zero 0,33 l & & 5.0\\
+Apfelsaft 0,5 l & & 6.5\\
+Hausgemachte Orangenlimonade 0,5 l & & 7.9\\
+Hausgemachter Tamarinden-Eistee 0,5 l & & 7.9\\
+Soda Zitrone / Himbeere / Holunder 0,5 l (Jugendgetränk) & & 6.5\\
+Soda 0,5 l & & 4.9
+\end{tabular}
+
+\section*{Heißgetränke}
+\begin{tabular}{Lrr}
+\textbf{Wiener Kaffee}\\
+\hspace{0.4cm}Espresso klein & & 4.5\\
+\hspace{0.4cm}Espresso groß & & 5.5\\
+\hspace{0.4cm}Cappuccino & & 6.5\vspace{0.1cm}\\
+\textbf{Tee}\\
+\hspace{0.4cm}Österreichischer Kräutertee & & 7.9\\
+\hspace{0.4cm}Asiatischer Kräutertee & & 6.5\\
+\hspace{0.4cm}Schwarztee & & 6.5\\
+\hspace{0.4cm}Früchtetee & & 5.0
+\end{tabular}
+
+\section*{Bier}
+\begin{tabular}{Lrr}
+\textbf{Vom Fass}\\
+\hspace{0.4cm}Stiegl 0,3 l & & 5.0\\
+\hspace{0.4cm}Stiegl 0,5 l & & 7.5\vspace{0.1cm}\\
+\textbf{Flasche}\\
+\hspace{0.4cm}Ottakringer Helles 0,33 l & & 5.9\\
+\hspace{0.4cm}Ottakringer Zwickl Hell (Bio) 0,5 l & & 7.0\\
+\hspace{0.4cm}Wieselburger Gold 0,5 l & & 6.9\\
+\hspace{0.4cm}Kirin Lager 0,33 l & & 6.9\vspace{0.1cm}\\
+\textbf{Alkoholfrei}\\
+\hspace{0.4cm}Trumer Freispiel 0,33 l & & 5.5\\
+\hspace{0.4cm}Ottakringer Null Komma Josef 0,33 l & & 5.5
+\end{tabular}
+
+\columnbreak
+\section*{Wasser}
+\begin{tabular}{Lrr}
+& 0,33 l & 0,75 l\\
+Vöslauer Still (Jugendgetränk) & 4.5 & 7.9\\
+Vöslauer Prickelnd & 4.5 & 8.9
+\end{tabular}
+
+\section*{Aperitif}
+\begin{tabular}{Lrr}
+Aperol Spritz & & 9.5\\
+Hugo & & 8.5\\
+Weißer Spritzer 0,25 l & & 7.5\\
+Prosecco (Zonin Millesimato Brut) 0,1 l & & 7.5
+\end{tabular}
+
+\section*{Wein}
+\begin{tabular}{Lrr}
+& 0,125 l & 0,75 l\\
+-- \textbf{Gelber Muskateller} \emph{Domäne Wachau 2024} & 6.5 & 38.9\\
+-- \textbf{Roter Veltliner} \emph{Wagram DAC 2024} & 7.5 & 40.9\\
+-- \textbf{Roter Veltliner Ried Altweingarten} \emph{Schuster 2024} & 6.9 & 41.5\\
+-- \textbf{Grüner Veltliner} \emph{Weingut Schramböck 2024} & 6.9 & 41.5\\
+-- \textbf{Riesling Federspiel Loibenberg} \emph{Domäne Wachau 2024} & 7.5 & 40.9\\
+-- \textbf{Rosé Cistercien} \emph{Schloss Gobelsburg 2024} & 6.5 & 37.9\\
+-- \textbf{Blaufränkisch Oggau Johanneshöhe (Bio)} \emph{Prieler 2022} & 6.9 & 41.5\\
+-- \textbf{Merlot} \emph{Malteser Ritterorden 2021} & 7.5 & 40.9\\
+-- \textbf{Pinot Noir vom Schloss (Bio)} \emph{Graf Hardegg 2023} & 6.9 & 41.9
+\end{tabular}
+
+\end{multicols}
+
+\vfill
+\begin{center}
+    {\small \textit{Alle Preise inklusive MwSt.}}\\
+    {\small Liechtensteinstraße 23, 1090 Wien \quad | \quad +43 660 5553879 \quad | \quad papatanrestaurant.at}
+\end{center}
+
+\newpage
+
+% === ENGLISH VERSION - PAGE 1 ===
+
+\setlength{\columnsep}{0.8cm}
+\begin{multicols}{2}
+
+\noindent
+{\Huge\bfseries\color{accent} Papa Tan}\\[0.5em]
+\noindent\rule{\linewidth}{0.4pt}\\[0.5em]
+
+% Logo as overlay in first column
+\begin{tikzpicture}[remember picture,overlay]
+\node[anchor=north,xshift=8.5cm,yshift=-2cm] at (current page.north west) 
+{\includegraphics[width=3.5cm]{papa_tan_bw.jpeg}};
+\end{tikzpicture}
+
+\section*{Soups}
+\begin{tabular}{Lrr}
+\textbf{Miso Soup}\textsuperscript{{\scriptsize F, \vegan}} & & 5.9 \\
+\textbf{Pancake Soup}\textsuperscript{{\scriptsize ACGL}} & & 6.5 \\
+\textbf{Pumpkin Cream Soup}\textsuperscript{\vegan} & & 7.9
+\end{tabular}
+
+\section*{Appetizers}
+\begin{tabular}{Lrr}
+\textbf{Beef Tartare}\textsuperscript{{\scriptsize ABCDGMO}} & & 23.5\vspace{0.1cm}\\
+\textbf{Langos with}\textsuperscript{{\scriptsize AGNO}}\\
+\hspace{0.4cm}Chicken & & 10.5\\
+\hspace{0.4cm}Duck/Beef & & 12.5\\
+\hspace{0.4cm}Smoked salmon\textsuperscript{{\scriptsize D}} & & 12.9\\
+\hspace{0.4cm}Cheese\textsuperscript{\vegetarisch} & & 8.9\vspace{0.1cm}\\
+\textbf{Summer Rolls with}\textsuperscript{{\scriptsize AEO}}\\
+\hspace{0.4cm}Chicken & & 7.5\\
+\hspace{0.4cm}Duck & & 9.9\\
+\hspace{0.4cm}Salmon\textsuperscript{{\scriptsize D}} & & 10.5\\
+\hspace{0.4cm}Beef & & 7.9\\
+\hspace{0.4cm}Avocado\textsuperscript{{\scriptsize \vegan}} & & 8.9\vspace{0.1cm}\\
+\textbf{Sheep's cheese pastry}\textsuperscript{{\scriptsize ACG, \vegetarisch}} & & 11.5\vspace{0.1cm}\\
+\textbf{Spring Rolls}\\
+\hspace{0.4cm}Classic\textsuperscript{{\scriptsize AC}} & & 8.5\\
+\hspace{0.4cm}{\color{vegan}{\textbf{Vegan}}}\textsuperscript{{\scriptsize A}} & & 6.9\vspace{0.1cm}\\
+\textbf{Vietnamese Tempura}\textsuperscript{{\scriptsize A}}\\
+\hspace{0.4cm}\scriptsize {\color{vegan}{\textbf{vegan}}} option available & & 10.5
+\end{tabular}
+
+\section*{Desserts}
+\begin{tabular}{Lrr}
+\textbf{Kaiserschmarrn}\textsuperscript{{\scriptsize ACG, \vegetarisch}}\\
+\hspace{0.4cm}\scriptsize with apricot compote & & 11.5\\
+\textbf{Poached Pear}\textsuperscript{{\scriptsize \vegan, H}}\\
+\hspace{0.4cm}\scriptsize with caramelized hazelnuts, chestnut mousse and vanilla tuile & & 12.9\\
+\textbf{Vietnamese Mochi}\textsuperscript{{\scriptsize \vegan, E}}\\
+\hspace{0.4cm}\scriptsize with coconut sauce and peanuts & & 12.9
+\end{tabular}
+
+\section*{Main Courses}
+\begin{tabular}{Lrr}
+\textbf{Pork Schnitzel}\textsuperscript{{\scriptsize ACG}}\\
+\hspace{0.4cm}\scriptsize with potato salad & & 20.9\\
+\textbf{Veal Schnitzel}\textsuperscript{{\scriptsize ACG}}\\
+\hspace{0.4cm}\scriptsize with potato salad & & 33.9\\
+\textbf{Chicken Schnitzel}\textsuperscript{{\scriptsize ACG}}\\
+\hspace{0.4cm}\scriptsize with Caesar salad & & 25.9\\
+\textbf{Gà nướng đậu phộng}\textsuperscript{{\scriptsize AEFGM}}\\
+\hspace{0.4cm}\scriptsize Grilled chicken with peanut sauce, coconut sticky rice and leaf salad & & 31.0\\
+\textbf{Teriyaki}\textsuperscript{{\scriptsize ACEFGM}}\\
+\hspace{0.4cm}\scriptsize with rice and Caesar salad\\
+\hspace{0.4cm}Salmon & & 25.9\\
+\hspace{0.4cm}Duck-Mango & & 25.9\\
+\textbf{Green Thai Curry}\\
+\hspace{0.4cm}Chicken \textsuperscript{{\scriptsize AF}} & & 20.9\\
+\hspace{0.4cm}Duck \textsuperscript{{\scriptsize AF}} & & 25.9\\
+\hspace{0.4cm}Beef \textsuperscript{{\scriptsize AF}} & & 23.5\\
+\hspace{0.4cm}Fried Tofu\textsuperscript{{\scriptsize F, \vegan}} & & 20.9\\
+\hspace{0.4cm}Vegetables\textsuperscript{\vegan} & & 19.5\\
+\textbf{Pad Thai with Salad}\textsuperscript{{\scriptsize AE}}\\
+\hspace{0.4cm}Chicken & & 21.9\\
+\hspace{0.4cm}Duck & & 25.9\\
+\hspace{0.4cm}Beef & & 23.5\\
+\hspace{0.4cm}Fried Tofu\textsuperscript{{\scriptsize F, \vegan}} & & 20.9\\
+\textbf{Phở with Noodles}\textsuperscript{{\scriptsize A}}\\
+\hspace{0.4cm}Chicken & & 23.5\\
+\hspace{0.4cm}Beef & & 25.9\\
+\hspace{0.4cm}Beef Ribs & & 33.9\\
+\hspace{0.4cm}Duck & & 28.5\\
+\textbf{Ramen}\textsuperscript{{\scriptsize ACF}}\\
+\hspace{0.4cm}Chicken & & 23.5\\
+\hspace{0.4cm}Beef & & 25.9\\
+\hspace{0.4cm}Beef Ribs & & 33.9\\
+\hspace{0.4cm}Duck & & 28.5\\
+\textbf{Sushi}\\
+\hspace{0.4cm}Salmon\textsuperscript{{\scriptsize ACDF}} & & 23.5\\
+\hspace{0.4cm}Salmon-Avocado\textsuperscript{{\scriptsize CDF}} & & 25.9\\
+\hspace{0.4cm}Avocado\textsuperscript{{\scriptsize \vegan, AFN }} & & 20.9\\
+\textbf{Cà tím kho}\textsuperscript{{\scriptsize F, \vegan}}\\
+\hspace{0.4cm}\scriptsize Vietnamese dish with caramelized eggplant & & 24.5\\
+\textbf{Sheep's cheese pastry}\textsuperscript{{\scriptsize ACG, \vegetarisch}}\\
+\hspace{0.4cm}\scriptsize with parmesan sauce and green salad & & 25.9
+\end{tabular}
+
+\end{multicols}
+
+\vfill
+
+\begin{tcolorbox}[
+  width=\textwidth,
+  colback=white,
+  colframe=white,
+  enhanced,
+]
+\centering
+{\scriptsize\color{gray}
+\textbf{A}(Gluten) 
+\textbf{C}(Eggs)
+\textbf{D}(Fish) 
+\textbf{E}(Peanuts) 
+\textbf{F}(Soy) 
+\textbf{G}(Milk or Lactose)
+\textbf{H}(Tree Nuts)
+\textbf{L}(Celery) 
+\textbf{M}(Mustard)
+\textbf{N}(Sesame) 
+\textbf{O}(Sulfites) \quad | \quad {\color{vegan}{\textbf{Vegan}}} = Vegan \quad {\color{vegan}{\textbf{Veg}}} = Vegetarian}
+\end{tcolorbox}
+
+\newpage
+
+% === ENGLISH VERSION - PAGE 2 ===
+
+% Logo in top-right corner
+\begin{tikzpicture}[remember picture,overlay]
+\node[anchor=north east,yshift=-1cm,xshift=-1cm] at (current page.north east) 
+{\includegraphics[width=3.5cm]{papa_tan_bw.jpeg}};
+\end{tikzpicture}
+
+\begin{center}
+    {\huge\bfseries\color{accent} Papa Tan}\\[0.35em]
+    \vspace{3.6em}
+\end{center}
+
+\small
+\titlespacing*{\section}{0pt}{0.45em}{0.25em}
+\setlength{\columnsep}{0.7cm}
+\begin{multicols}{2}
+
+\section*{Juices}
+\begin{tabular}{Lrr}
+Coca-Cola 0.33 l & & 5.0\\
+Coca-Cola Zero 0.33 l & & 5.0\\
+Apple juice 0.5 l & & 6.5\\
+Homemade orange lemonade 0.5 l & & 7.9\\
+Homemade tamarind iced tea 0.5 l & & 7.9\\
+Soda Lemon / Raspberry / Elderflower 0.5 l (youth drink) & & 6.5\\
+Soda 0.5 l & & 4.9
+\end{tabular}
+
+\section*{Hot Drinks}
+\begin{tabular}{Lrr}
+\textbf{Viennese coffee}\\
+\hspace{0.4cm}Espresso small & & 4.5\\
+\hspace{0.4cm}Espresso large & & 5.5\\
+\hspace{0.4cm}Cappuccino & & 6.5\vspace{0.1cm}\\
+\textbf{Tea}\\
+\hspace{0.4cm}Austrian herbal tea & & 7.9\\
+\hspace{0.4cm}Asian herbal tea & & 6.5\\
+\hspace{0.4cm}Black tea & & 6.5\\
+\hspace{0.4cm}Fruit tea & & 5.0
+\end{tabular}
+
+\section*{Beer}
+\begin{tabular}{Lrr}
+\textbf{On tap}\\
+\hspace{0.4cm}Stiegl 0.3 l & & 5.0\\
+\hspace{0.4cm}Stiegl 0.5 l & & 7.5\vspace{0.1cm}\\
+\textbf{Bottled}\\
+\hspace{0.4cm}Ottakringer Helles 0.33 l & & 5.9\\
+\hspace{0.4cm}Ottakringer Zwickl Hell (Organic) 0.5 l & & 7.0\\
+\hspace{0.4cm}Wieselburger Gold 0.5 l & & 6.9\\
+\hspace{0.4cm}Kirin Lager 0.33 l & & 6.9\vspace{0.1cm}\\
+\textbf{Non-alcoholic}\\
+\hspace{0.4cm}Trumer Freispiel 0.33 l & & 5.5\\
+\hspace{0.4cm}Ottakringer Null Komma Josef 0.33 l & & 5.5
+\end{tabular}
+
+\columnbreak
+\section*{Water}
+\begin{tabular}{Lrr}
+& 0.33 l & 0.75 l\\
+Vöslauer Still (youth drink) & 4.5 & 7.9\\
+Vöslauer Sparkling & 4.5 & 8.9
+\end{tabular}
+
+\section*{Aperitif}
+\begin{tabular}{Lrr}
+Aperol Spritz & & 9.5\\
+Hugo & & 8.5\\
+White wine spritzer 0.25 l & & 7.5\\
+Prosecco (Zonin Millesimato Brut) 0.1 l & & 7.5
+\end{tabular}
+
+\section*{Wine}
+\begin{tabular}{Lrr}
+& 0.125 l & 0.75 l\\
+-- \textbf{Gelber Muskateller} \emph{Domäne Wachau 2024} & 6.5 & 38.9\\
+-- \textbf{Roter Veltliner} \emph{Wagram DAC 2024} & 7.5 & 40.9\\
+-- \textbf{Roter Veltliner Ried Altweingarten} \emph{Schuster 2024} & 6.9 & 41.5\\
+-- \textbf{Grüner Veltliner} \emph{Weingut Schramböck 2024} & 6.9 & 41.5\\
+-- \textbf{Riesling Federspiel Loibenberg} \emph{Domäne Wachau 2024} & 7.5 & 40.9\\
+-- \textbf{Rosé Cistercien} \emph{Schloss Gobelsburg 2024} & 6.5 & 37.9\\
+-- \textbf{Blaufränkisch Oggau Johanneshöhe (Bio)} \emph{Prieler 2022} & 6.9 & 41.5\\
+-- \textbf{Merlot} \emph{Malteser Ritterorden 2021} & 7.5 & 40.9\\
+-- \textbf{Pinot Noir vom Schloss (Bio)} \emph{Graf Hardegg 2023} & 6.9 & 41.9
+\end{tabular}
+
+\end{multicols}
+
+\vfill
+\begin{center}
+    {\small \textit{All prices include VAT.}}\\
+    {\small Liechtensteinstraße 23, 1090 Vienna \quad | \quad +43 660 5553879 \quad | \quad papatanrestaurant.at}
+\end{center}
+
+
+\end{document}
