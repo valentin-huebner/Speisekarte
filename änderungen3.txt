@@ -1,0 +1,68 @@
+#### Getränke:
+
+Beim Prosecco mach zwei unterpunkte, der eine ist Glas 0.1 l, Preis 5.5
+der andere ist Flasche 0.75 l, Preis 29.9
+
+weitere Preisänderungen:
+
+gelber muskateller klein 5.5
+roter veltliner ried altweingarten klein 5.6
+grüner veltliner schramböck groß 28.9
+blaufränkisch klein 5.4
+pinot noir klein 5.7
+
+die nichtalkoholischen Biere beide auf 4.9
+
+außerdem roter veltliner wagram komplett raus,
+stattdessen neu 
+Roter Veltliner vom Löss Bio Schuster 2025 um 5.6 / 31.9
+(Schuster 2025 korrekt formatiert)
+
+#### Speisen:
+
+Bei allen Schnitzel-Optionen "Pommes frites" / "Potato fries" statt Erdäpfel-Salat
+
+Beim Thai Curry machen wir es so: die erste Option heißt "mit Gemüse" und kostet 12,90
+Dann kommt Huhn, aber ab jetzt als Upsell, mit Preisangabe +3,6
+Ente +3,9
+Rind +3,9
+Tofu +3,4
+
+Beim Pad Thai änlich. Der Zusatz "mit Salat" kommt überhapt weg. Dann erste Option "mit Gemüse" um 12,90
+gleiche zusatz-Optionen und Preise wie Curry
+
+Beim Pho genau gleich, gleicher Basis und Upsell Preis, einziger Unterschied es gibt keine Tofu-Option
+
+Ramen genau gleich wie Pad Thai (also mit neuer Tofu-Option)
+
+Beim Sushi dazuschreiben in die Klammer "12 Stück Maki" statt nur "12 Stück"
+
+
+Dann zur linken Spalte.
+
+Beim Langos machen wir auch Upsell. Die Überschrift ist jetzt die Option ohne irgendwas, schaut gleich aus aber in die Preisspalte kommt 6.9
+Dann Huhn +1.6
+Ente +1.9
+Rind +1.9
+Lachs +2.6
+Käse +1.9
+
+Bei den Sommerrollen
+die erste Option heißt "mit Gemüse und Salat (mit vegan label)" um 4.9
+dann Huhn +1.6
+Ente +1.9
+Lachs +2.6
+Rind +1.9
+Avocado +2.3
+Gebratener Tofu +1.6
+
+
+Für Kaiserschmarrn neuer preis 6.9
+Mochi auch 6.9
+
+
+
+
+Bei den Hauptspeisen ändere auch noch die Reihenfolge:
+
+Zuerst Pad Thai, dann Thai Curry, dann Pho, dann Ramen, dann Ga nuong, dann Ca tim kho, dann Ente-mango, dann Sushi, dann Teriyaki, Gimbap, dann die Schnitzel-Optionen. Wenn ich was ausgelassen habe sag es mir!
